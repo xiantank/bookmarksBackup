@@ -1,7 +1,7 @@
 {
-	"name": "bookmarks2picture ",
-	"version": "0.1",
-	"description": "save all website page as picture in bookmarks",
+	"name": "bookmarksBackup",
+	"version": "0.5",
+	"description": "save all website page as picture/mhtml in bookmarks to google drive",
 	"default_locale": "en",
 	"icons": {
 		"16": "src/img/icon.png",
