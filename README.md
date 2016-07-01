@@ -1,6 +1,7 @@
-# bookmarks2picture
+# bookmarksBackup
+[Chrome Extension on Chrome web store](https://chrome.google.com/webstore/detail/bookmarksbackup/eoloobbcdikichjbcillilcnaleaccbp)
 
-save all website page as picture in bookmarks
+save all website page as picture/mhtml in bookmarks to Google Drive
 
 ## usage
 ### first step
