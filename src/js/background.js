@@ -200,7 +200,7 @@ function initToken(isInteractive = true) {
 }
 function init() {
     gdrive = new GDrive({renew: renewToken});
-    initToken(false);
+    initToken();
     chrome.runtime.onMessage.addListener(function (request) {
         if (request.action === "initToken") {
             renewToken(false).then(token=> {
