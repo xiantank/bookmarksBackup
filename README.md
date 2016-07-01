@@ -3,6 +3,11 @@
 save all website page as picture in bookmarks
 
 ## usage
+### first step
+1. go to option page
+2. click button: access with google
+3. accept
+
 ### what can change?
 in options:
 * what format to save, now support
@@ -14,12 +19,12 @@ in options:
 * all bookmarks
   * right click icon and choose `download bookmarks`
 * pages you want to save
-  1. click icon in all pages you want to save 
-  2.  right click icon and choose `download pages`
+  * click icon in the page you want to save
 
-## feature still not support (coming soon)
-* save bookmarks run in background (this don't use cookies)
-* splite bookmarks save as many chunk (this can reduce memory use, and reduce crash)
+## still not support (coming soon, maybe...)
+* save bookmarks run in background
+* split bookmarks as many chunk for remember backup progress
 * a page to show bookmarks save progress
 * user can choose partial part of bookmarks to save
-* concurrent bookmarks save
+* force stop bookmarks backup
+* beautiful UI (maybe never...)
