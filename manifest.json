@@ -1,0 +1,53 @@
+{
+	"name": "bookmarks2picture ",
+	"version": "0.1",
+	"description": "save all website page as picture in bookmarks",
+	"default_locale": "en",
+	"icons": {
+		"16": "src/img/icon.png",
+		"48": "src/img/icon.png",
+		"128": "src/img/icon.png"
+	},
+	"background": {
+		"page": "src/background.html"
+	},
+	"permissions": [
+		"identity",
+		"pageCapture",
+		"contextMenus",
+		"downloads",
+		"tabs",
+		"storage",
+		"bookmarks",
+		"webRequest",
+		"<all_urls>"
+	],
+	"browser_action": {
+		"default_title": "bookmarks2picture",
+		"default_icon": "src/img/icon.png"
+	},
+	"options_page": "src/options.html",
+	"content_scripts": [
+		{
+			"matches": [
+				"<all_urls>"
+			],
+			"js": [
+				"src/lib/html2canvas.js",
+				"src/contentScript/getHTML.js"
+			],
+			"run_at": "document_idle"
+		}
+	],
+	"content_security_policy": "script-src 'self' https://apis.google.com; object-src 'self'",
+	"oauth2": {
+		"client_id": "709549032264-n7bafg333opibn2iuo0kpjbphba0hoat.apps.googleusercontent.com",
+		"scopes": [
+			"https://www.googleapis.com/auth/drive",
+			"https://www.googleapis.com/auth/drive.file",
+			"https://www.googleapis.com/auth/drive.appdata"
+		]
+	},
+	"key": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAiIQOchjG5YjxJQc/TxgptsC3m2d3Z3u2eZZHgyS83eAXEsNfeD/PfPMlFU1xWVlnKviP2kZUU0YY6936IFvbvqw5h1SifkGZOkoiLx+iYp1AGRTwOveTIUkpiiGt5ZjLuPNj9dVFVWn3WmTY3kDICgfngiVnztqx44jp0PvxIDjo77n310nnodRWnA1FejkCh6IAA/lWndQtfIucxsthd/PabqItA8X7mdhYtwYLAboEV4QAQlvT3ZOCCES24iexlqOlFEmkgMPPQPWgiCaXP2ZgY3h2hfK7iuGO8Ye+evGfOOLvghQRP+/PsTgHAH32BuUNRWobvpFgh1JfIGuCDwIDAQAB",
+	"manifest_version": 2
+}
